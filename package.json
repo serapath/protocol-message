@@ -1,0 +1,32 @@
+{
+  "name": "protocol-message",
+  "version": "0.0.0",
+  "description": "\"a .postMessage protocol\"",
+  "main": "src/protocol-message.js",
+  "scripts": {
+    "start": "budo demo/demo.js:bundle.js --title $npm_package_name --force-default-index --open --live --ssl",
+    "build": "browserify --full-paths demo/demo.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serapath/protocol-message.git"
+  },
+  "keywords": [
+    "web",
+    "protocol",
+    "message",
+    "browser",
+    "iframe",
+    "worker"
+  ],
+  "author": "@serapath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serapath/protocol-message/issues"
+  },
+  "homepage": "https://github.com/serapath/protocol-message#readme",
+  "devDependencies": {
+    "budo": "^11.6.2"
+  }
+}
